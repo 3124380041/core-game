@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* Game Theme Variables */
+:root {
+  --game-bg: #0f0f23;
+  --game-bg-secondary: #1a1a2e;
+  --game-accent: #6366f1;
+  --game-accent-light: #818cf8;
+  --game-gold: #fbbf24;
+  --game-success: #22c55e;
+  --game-danger: #ef4444;
+  --game-text: #e2e8f0;
+  --game-text-muted: #94a3b8;
+
+  /* Hero Type Colors */
+  --hero-tank: #3b82f6;
+  --hero-attack-phys: #ef4444;
+  --hero-attack-magic: #a855f7;
+  --hero-support: #22c55e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(180deg, var(--game-bg) 0%, var(--game-bg-secondary) 100%);
+  color: var(--game-text);
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--game-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--game-accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--game-accent-light);
+}

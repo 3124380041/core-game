@@ -92,7 +92,7 @@ public class Hero {
     // ==================== RELATIONSHIPS ====================
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "owner_id", nullable = false)
+    @JoinColumn(name = "owner_id")
     private Player owner;
 
     @OneToMany(mappedBy = "hero", cascade = CascadeType.ALL, orphanRemoval = true)
